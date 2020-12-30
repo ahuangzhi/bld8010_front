@@ -1,0 +1,121 @@
+@import './variables.scss';
+@import './mixin.scss';
+@import './transition.scss';
+@import './element-ui.scss';
+@import './sidebar.scss';
+
+body {
+  height: 100%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, Arial, sans-serif;
+}
+
+label {
+  font-weight: 700;
+}
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  font-size: 50px;
+}
+
+#app {
+  height: 100%;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+div:focus {
+  outline: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+
+// main-container global css
+.app-container {
+  padding: 20px;
+}
+
+//
+#client_manage, #user_manage {
+  margin-top: .4rem;
+}
+.drawer_class {
+  display: flex;
+  overflow-y:scroll;
+  font-size: .7rem;
+}
+.drawer_class .el-drawer__header {
+  text-align: center;
+  font-weight: bold;
+}
+.client_show_list, .user_show_list, .client_add_from, .show_operate, .user_add_from,
+.assets_add_from, .assets_show_list, .assets_distribution_from, .device_show_list,
+.device_add_from, .device_show_list, .tenant_show_list, .tenant_add_from, .add_from,
+.show_list {
+  max-width: 16rem;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 1rem;
+}
+.spacing20{
+  letter-spacing: .04rem;
+}
+.show_button{
+  width: 100%;
+  margin-left: 0!important;
+}
+.update_button{
+  margin-bottom: .6rem;
+}
+.round_button{
+  padding: 0!important;
+  border: none!important;
+  color: #0e9aef;
+}
+.bld_icon{
+  color: #606266;
+  font-size: 24px;
+  width: 24px;
+  height: 24px;
+}
+
+.drawer_class .el-tabs__nav-scroll {
+  display: flex !important;
+  justify-content: center !important;
+  font-size: .5rem;
+  margin-top: .1rem;
+}
+
+.svg-icon{
+  color: #606266;
+}
